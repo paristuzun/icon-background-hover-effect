@@ -1,10 +1,7 @@
 .ct-icon-boxes .ct-icon-box {
     padding-top: 8px;
-}
-.ct-icon-boxes .ct-icon-box {
     width: 50%;
     float: left;
-    min-height: 1px;
     position: relative;
     border: 2px solid #ccc;
     min-height: 267px;
@@ -12,39 +9,46 @@
     text-align: center;
     color: #292929;
     margin-bottom: -2px;
-    padding-top: 36px;
-}
-.ct-icon-box {
     cursor: pointer;
-}
-
-.ct-icon-box:hover {
-    background: #fd4f00;
+  }
+  
+  .ct-icon-box:hover {
+    background: #d60e96;
     color: #fff;
-}
-
-.ct-icon-boxes {
-    margin-top: 65px;
+  }
+  
+  .ct-icon-boxes {
+    margin: 65px auto;
     max-width: 525px;
-}
-
-.ct-icon-boxes .ct-icon-box__header {
-    font-family: 'Oswald', sans-serif;
+  }
+  
+  .ct-icon-boxes .ct-icon-box__header {
     font-size: 22px;
     text-transform: uppercase;
-}
-section h3 {
+  }
+  
+  section h3 {
     font-weight: 600;
     letter-spacing: 0.5px;
-}
-
-.ct-icon-boxes .ct-icon-box.bottom-all {
+  }
+  
+  .ct-icon-boxes .ct-icon-box.bottom-all {
     width: 99.5%;
     min-height: 250px;
-}
-
-@media only screen and (min-width: 480px) {
-.ct-icon-boxes .ct-icon-box.top-right, .ct-icon-boxes .ct-icon-box.bottom-right {
-    margin-left: -2px;
-}
-}
+  }
+  
+  @media only screen and (min-width: 480px) {
+  
+    .ct-icon-boxes .ct-icon-box.top-right,
+    .ct-icon-boxes .ct-icon-box.bottom-right {
+      margin-left: -2px;
+    }
+  }
+  
+  .ct-icon-boxes .ct-icon-box > .ct-icon-boxes .ct-icon-box__inner,
+  .ct-icon-boxes .ct-icon-box > .inner {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+  }
+  
