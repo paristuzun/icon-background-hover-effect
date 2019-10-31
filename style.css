@@ -20,6 +20,8 @@
   .ct-icon-boxes {
     margin: 65px auto;
     max-width: 525px;
+    overflow: auto;
+    clear: both;
   }
   
   .ct-icon-boxes .ct-icon-box__header {
@@ -35,6 +37,7 @@
   .ct-icon-boxes .ct-icon-box.bottom-all {
     width: 99.5%;
     min-height: 250px;
+    margin-bottom: 2px;
   }
   
   @media only screen and (min-width: 480px) {
@@ -50,5 +53,9 @@
     display: table-cell;
     width: 100%;
     vertical-align: middle;
+  }
+
+  .container {
+    margin: 0 auto;
   }
   
